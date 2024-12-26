@@ -10,3 +10,36 @@ body {
     color-scheme: dark;
   }
 }
+
+.wrapper {
+  min-width: 1024px;
+}
+
+nav li {
+  padding: 0.75rem;
+}
+
+.sidebar {
+  width: 240px;
+  z-index: 10;
+}
+section.main {
+  padding-left: 240px;
+}
+
+a {
+  color: #5469d4;
+}
+
+a:hover {
+  color: #555;
+}
+
+.active {
+  color: #5469d4;
+  font-weight: 600;
+}
+
+.btn {
+  transition: 0.2s ease-in;
+}
