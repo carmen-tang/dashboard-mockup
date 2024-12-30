@@ -1,5 +1,5 @@
 const Sidebar: React.FC<{ navStructure: { category: string; links: { name: string; href: string }[] }[] }> = ({ navStructure }) => (
-  <div className="sidebar fixed px-2 pl-5 py-3 h-screen">
+  <div className="sidebar w-[400px] px-2 pl-5 py-3 h-screen">
     <div className="p-2 max-w-[125px] mb-6">
       {/* inline svg - future optimization: folder refactor and compile svgs into assets to import */}
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111 27">
