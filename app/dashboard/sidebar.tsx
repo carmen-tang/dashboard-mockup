@@ -1,6 +1,6 @@
 const Sidebar: React.FC<{ navStructure: { category: string; links: { name: string; href: string }[] }[] }> = ({ navStructure }) => (
   <div className="sidebar fixed px-2 pl-5 py-3 h-screen">
-    <div className="p-1 max-w-[125px]">
+    <div className="p-2 max-w-[125px] mb-6">
       {/* inline svg - future optimization: folder refactor and compile svgs into assets to import */}
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111 27">
         <g fill="none">
@@ -9,10 +9,13 @@ const Sidebar: React.FC<{ navStructure: { category: string; links: { name: strin
         </g>
       </svg>
     </div>
-    <nav className="pt-3">
-      <ul className="ml-2 mt-2">
+    <div>
+      <span className="text-white text-sm">Customer Dashboard</span>
+    </div>
+    <nav>
+      <ul className="mt-1">
         {navStructure.map((category, categoryIndex) => (
-          <li key={categoryIndex} className="mb-4">
+          <li key={categoryIndex}>
             {category.category && (
               <p className="title text-sm text-white tracking-wider pb-2">{category.category}</p>
             )}
