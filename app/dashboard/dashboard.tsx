@@ -37,7 +37,8 @@ const Dashboard: React.FC = () => {
   const topNavRight = ['Login', 'Sign Up'];
 
   return (
-    <div className="wrapper flex content-center sm:max-w-screen-xl mx-auto">
+    // sm:max-w-screen-xl
+    <div className="wrapper flex content-center mx-auto">
       <Sidebar navStructure={navStructure} />
       <section className="main box-border relative w-full">
         <TopNav topNavLeft={topNavLeft} topNavRight={topNavRight} />

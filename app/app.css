@@ -20,19 +20,19 @@ nav li {
 }
 
 .sidebar {
-  width: 240px;
   z-index: 10;
+  background-color: #131827;
 }
 section.main {
   padding-left: 240px;
 }
 
 a {
-  color: #5469d4;
+  color: #ffffff;
 }
 
 a:hover {
-  color: #555;
+  color: #EE5EEC;
 }
 
 .active {
