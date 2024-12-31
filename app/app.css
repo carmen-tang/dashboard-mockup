@@ -41,6 +41,15 @@ a:hover {
   transition: 0.2s ease-in;
 }
 
+.bell svg {
+  width: 26px;
+  height: 26px;
+}
+
+.user svg {
+  fill: #C5C5CC;
+}
+
 /* tailwind */
 
 .table-row-headers {
