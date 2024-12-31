@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Sidebar from './sidebar';
 import TopNav from './topNav';
+import CoveragePeriods from './coveragePeriods';
 
 const Dashboard: React.FC = () => {
   const navStructure = [
@@ -40,10 +41,10 @@ const Dashboard: React.FC = () => {
     // sm:max-w-screen-xl
     <div className="wrapper flex content-center mx-auto">
       <Sidebar navStructure={navStructure} />
-      <section className="main box-border relative w-full">
+      <section className="main box-border relative w-full bg-[#f1f1f3]">
         <TopNav topNavLeft={topNavLeft} topNavRight={topNavRight} />
-        <div className="main-content box-border my-10">
-          content
+        <div className="main-content box-border m-4">
+          <CoveragePeriods />
         </div>
       </section>
     </div>

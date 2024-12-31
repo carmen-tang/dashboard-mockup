@@ -1,4 +1,4 @@
-const Sidebar: React.FC<{ navStructure: { category: string; li4ks: { name: string; href: string }[] }[] }> = ({ navStructure }) => (
+const Sidebar: React.FC<{ navStructure: { category: string; links: { name: string; href: string }[] }[] }> = ({ navStructure }) => (
   <div className="sidebar w-[400px] pl-4 py-3 h-screen">
     <div className="p-2 max-w-[125px] mb-6">
       {/* inline svg - future optimization: folder refactor and compile svgs into assets to import */}
