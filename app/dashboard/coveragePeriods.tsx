@@ -1,10 +1,11 @@
 import React from 'react';
 import OrganizationList from './organizationList';
 import SettingsIcon from 'app/assets/icons/settings';
+import { TbFilterPlus } from "react-icons/tb";
 
 const CoveragePeriods: React.FC = () => (
   <div className="coverage-periods bg-white rounded-xl p-6">
-    <div className="page-header flex justify-between mb-6">
+    <div className="page-header flex justify-between mb-4">
       <h1 className="text-2xl">Coverage Periods</h1>
       <div className="flex">
         <div className="mr-2">
@@ -22,10 +23,15 @@ const CoveragePeriods: React.FC = () => (
             </svg>
           </span>
           <div className="flex justify-between">
-            <input type="search" name="search" id="search" placeholder="Search" className="px-2 text-sm border-gray-200 rounded-lg pl-8 p-2 float-left w-full border rounded-lg placeholder-[#AFB0B9]" />
+            <input type="search" name="search" id="search" placeholder="Search" className="px-2 text-sm border-gray-200 pl-8 p-2 float-left w-full border rounded-lg placeholder-[#AFB0B9]" />
           </div>
         </div>
       </div>
+    </div>
+    <div className="mb-4">
+      <button className="border rounded-lg border-gray-200 text-sm p-2 flex items-center">
+        <TbFilterPlus /> <span className="ml-2">Filters</span>
+      </button>
     </div>
     <div className="page-content">
       <OrganizationList />
