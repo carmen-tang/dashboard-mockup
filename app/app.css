@@ -44,15 +44,15 @@ a:hover {
 /* tailwind */
 
 .table-row-headers {
-  @apply flex bg-gray-100 font-bold p-2 text-left items-center border-r border-b border-gray-300;
+  @apply flex bg-gray-100 font-bold p-2 text-left items-center border-r border-b border-gray-200;
 }
 
 .table-row-headers-end {
-  @apply flex bg-gray-100 font-bold p-2 text-left items-center border-b border-gray-300;
+  @apply flex bg-gray-100 font-bold p-2 text-left items-center border-b border-gray-200;
 }
 
 .table-cell {
-  @apply border-r border-b border-gray-300 p-2;
+  @apply border-r border-b border-gray-200 p-2;
 }
 
 .table-cell-end {

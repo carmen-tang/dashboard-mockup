@@ -1,4 +1,5 @@
 import React from 'react';
+import { RxCaretSort } from "react-icons/rx";
 
 export const organizations = [
   {
@@ -101,11 +102,11 @@ const OrganizationList: React.FC = () => {
 
     <div className="grid grid-cols-5 border-t border-r border-l border-gray-300 rounded-lg overflow-hidden w-full">
       {/* Headers */}
-      <div className="table-row-headers">UUID</div>
-      <div className="table-row-headers">Organization Name</div>
-      <div className="table-row-headers">Carrier</div>
-      <div className="table-row-headers">Account</div>
-      <div className="table-row-headers-end">Delivery Configuration</div>
+      <div className="table-row-headers">UUID <RxCaretSort /></div>
+      <div className="table-row-headers">Organization Name <RxCaretSort /></div>
+      <div className="table-row-headers">Carrier <RxCaretSort /></div>
+      <div className="table-row-headers">Account <RxCaretSort /></div>
+      <div className="table-row-headers-end">Delivery Configuration <RxCaretSort /></div>
 
       {/* Data Rows */}
       {organizations.map((org) => (
