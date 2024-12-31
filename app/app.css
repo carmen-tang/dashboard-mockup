@@ -40,3 +40,21 @@ a:hover {
 .btn {
   transition: 0.2s ease-in;
 }
+
+/* tailwind */
+
+.table-row-headers {
+  @apply flex bg-gray-100 font-bold p-2 text-left items-center border-r border-b border-gray-300;
+}
+
+.table-row-headers-end {
+  @apply flex bg-gray-100 font-bold p-2 text-left items-center border-b border-gray-300;
+}
+
+.table-cell {
+  @apply border-r border-b border-gray-300 p-2;
+}
+
+.table-cell-end {
+  @apply border-b border-gray-300 p-2;
+}

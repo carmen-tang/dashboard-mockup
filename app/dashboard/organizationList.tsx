@@ -98,23 +98,23 @@ const OrganizationList: React.FC = () => {
     //     ))}
     //   </tbody>
     // </table>
-    
-    <div className="grid grid-cols-5 gap-px border border-gray-300 rounded-lg overflow-hidden w-full">
+
+    <div className="grid grid-cols-5 border-t border-r border-l border-gray-300 rounded-lg overflow-hidden w-full">
       {/* Headers */}
-      <div className="bg-gray-100 font-bold p-2 text-left">UUID</div>
-      <div className="bg-gray-100 font-bold p-2 text-left">Organization Name</div>
-      <div className="bg-gray-100 font-bold p-2 text-left">Carrier</div>
-      <div className="bg-gray-100 font-bold p-2 text-left">Account</div>
-      <div className="bg-gray-100 font-bold p-2 text-left">Delivery Configuration</div>
+      <div className="table-row-headers">UUID</div>
+      <div className="table-row-headers">Organization Name</div>
+      <div className="table-row-headers">Carrier</div>
+      <div className="table-row-headers">Account</div>
+      <div className="table-row-headers-end">Delivery Configuration</div>
 
       {/* Data Rows */}
       {organizations.map((org) => (
         <React.Fragment key={org.UUID}>
-          <div className="p-2 border-b border-gray-300">{org.UUID}</div>
-          <div className="p-2 border-b border-gray-300">{org.organizationName}</div>
-          <div className="p-2 border-b border-gray-300">{org.carrier}</div>
-          <div className="p-2 border-b border-gray-300">{org.account}</div>
-          <div className="p-2 border-b border-gray-300">{org.deliveryConfiguration}</div>
+          <div className="table-cell">{org.UUID}</div>
+          <div className="table-cell">{org.organizationName}</div>
+          <div className="table-cell">{org.carrier}</div>
+          <div className="table-cell">{org.account}</div>
+          <div className="table-cell-end">{org.deliveryConfiguration}</div>
         </React.Fragment>
       ))}
     </div>
