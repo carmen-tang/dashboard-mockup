@@ -107,3 +107,7 @@ td {
 .filter-tag {
   @apply flex items-center border rounded-2xl border-[#890089] text-sm text-[#3B003B] px-2 py-1 mr-2 mb-2;
 }
+
+.filter-tag-select {
+  @apply flex items-center border rounded-2xl border-[#890089] text-sm text-[#3B003B] px-2 py-1 mr-2;
+}

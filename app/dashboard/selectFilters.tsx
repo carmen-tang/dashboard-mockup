@@ -25,12 +25,20 @@ const SelectFilters: React.FC = () => {
           </button>
         ))}
       </div>
-      <div className="tab-content mt-6">
+      <div className="tab-content mt-1">
         {activeTab === 'Filters' ? (
-          <div className="mt-6">
+          <div className="mt-1">
             <div className="p-6">
-              <label>Organization Name</label>
-              <select className=""></select>
+
+              {/* organization name */}
+              <div className="relative my-2">
+                <label htmlFor="organization-name" className="font-semibold">Organization Name</label>
+                <div className="flex border rounded-lg border-gray-300 w-full p-2">
+                  <div className="filter-tag-select">Amazon <IoCloseOutline className="small-icon ml-1" /></div>
+                  <div className="filter-tag-select">Middo <IoCloseOutline className="small-icon ml-1" /></div>
+                  <FaChevronDown className="absolute right-4 top-9" />
+                </div>
+              </div>
 
               {/* group */}
               <div className="relative my-2">
