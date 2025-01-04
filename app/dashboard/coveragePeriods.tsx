@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import OrganizationList from './organizationList';
 import Pagination from './pagination';
 import FilterTags from './filterTags';
+import SelectFilters from './selectFilters';
 // import SettingsIcon from 'app/assets/icons/settings'; Decided to use an icon library but if I were to manually add icon assets I would add it to an assets folder and import svgs like this
 import { FiSettings } from "react-icons/fi";
 import { TbFilterPlus } from "react-icons/tb";
@@ -60,6 +61,7 @@ const CoveragePeriods: React.FC = () => {
       <div className="page-content">
         <OrganizationList />
         <Pagination />
+        {showFilters && <SelectFilters />}
       </div>
     </div>
   );
