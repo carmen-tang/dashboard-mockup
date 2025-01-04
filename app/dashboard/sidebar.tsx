@@ -1,3 +1,4 @@
+import { RxCaretSort } from "react-icons/rx";
 import { HiOutlineInbox } from "react-icons/hi2";
 import { FiFolder } from "react-icons/fi";
 import { HiOutlineBookOpen } from "react-icons/hi";
@@ -56,7 +57,7 @@ const Sidebar: React.FC = () => {
 
   return (
     <div className="sidebar w-[400px]">
-      <div className="m-4 max-w-[125px] mb-6">
+      <div className="m-5 max-w-[125px] mb-10">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111 27">
           <g fill="none">
             <path fill="#EE5EEC" d="M.529.775h6.247v25.613H.529zM33.333 13.601c-.0066155 7.0598753-5.7281247 12.7813845-12.788 12.788H9.662V.775H20.54c7.067845.02313693 12.7858343 5.75811741 12.788 12.826m-6.247 0c-.0082459-3.60923562-2.9317657-6.53320236-6.541-6.542h-4.63v13.083h4.63c3.6090726-.0082481 6.5327519-2.9319274 6.541-6.541M104.384.851h6.229V26.39h-6.815L93.762 11.147v15.169h-6.23V.741h6.852l10 15.169z"></path>
@@ -65,7 +66,11 @@ const Sidebar: React.FC = () => {
         </svg>
       </div>
       <div>
-        <span className="text-white text-sm">Customer Dashboard</span>
+        <span className="inline-flex items-center text-white text-sm border rounded-lg border-gray-600 p-1 ml-5">
+          <span className="bg-[#890089] p-1 rounded-md text-white mr-2">CD</span>
+          Customer Dashboard
+          <RxCaretSort className="small-icon ml-2" />
+        </span>
       </div>
       <nav>
         <ul className="">
@@ -85,6 +90,7 @@ const Sidebar: React.FC = () => {
                     >
                       <span className="small-icon mr-2 text-white">{link.icon}</span>
                       {link.name}
+                      {link.name === "Inbox" &&<span className="small-icon flex items-center ml-auto text-white border rounded-lg border-gray-600 p-3 text-center justify-center">8</span>}
                     </a>
                   </li>
                 ))}
