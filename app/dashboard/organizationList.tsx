@@ -1,5 +1,6 @@
 import React from 'react';
 import { RxCaretSort } from "react-icons/rx";
+import { IoCopy } from "react-icons/io5";
 
 export const organizations = [
   {
@@ -111,7 +112,7 @@ const OrganizationList: React.FC = () => {
       {/* Data Rows */}
       {organizations.map((org) => (
         <React.Fragment key={org.UUID}>
-          <div className="table-cell">{org.UUID}</div>
+          <div className="table-cell text-[#890089]"><IoCopy className="copy-icon inline-flex mr-1"/> {org.UUID}</div>
           <div className="table-cell">{org.organizationName}</div>
           <div className="table-cell">{org.carrier}</div>
           <div className="table-cell">{org.account}</div>

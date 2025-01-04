@@ -38,6 +38,10 @@ td {
   padding: 4px;
 }
 
+::placeholder {
+  color: #c1c1c1;
+}
+
 .btn {
   transition: 0.2s ease-in;
 }
@@ -84,6 +88,10 @@ td {
 
 [aria-disabled="true"] {
   opacity: 0;
+}
+
+.copy-icon {
+  fill: #890089;
 }
 
 /* tailwind */

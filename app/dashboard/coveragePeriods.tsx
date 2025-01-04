@@ -61,7 +61,7 @@ const CoveragePeriods: React.FC = () => {
       <div className="page-content">
         <OrganizationList />
         <Pagination />
-        {showFilters && <SelectFilters />}
+        {showFilters && <SelectFilters toggleFilters={toggleFilters} />}
       </div>
     </div>
   );
