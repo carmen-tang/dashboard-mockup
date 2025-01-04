@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Sidebar from './sidebar';
 import TopNav from './topNav';
 import CoveragePeriods from './coveragePeriods';

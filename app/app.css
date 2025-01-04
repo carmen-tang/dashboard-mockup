@@ -15,10 +15,6 @@ body {
   min-width: 1024px;
 }
 
-nav li {
-  padding: 0.75rem;
-}
-
 .sidebar {
   z-index: 10;
   background-color: #131827;
@@ -59,6 +55,15 @@ a:hover {
 }
 
 .small-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar-link:hover svg {
+  stroke: #FF00FF;
+}
+
+.sidebar-link svg {
   width: 20px;
   height: 20px;
 }
