@@ -22,7 +22,7 @@ const CoveragePeriods: React.FC = () => {
         <div className="flex">
           <div className="mr-2">
             <button className="border rounded-lg border-gray-200 text-sm p-2">
-              <FiSettings />
+              <FiSettings className="small-icon"/>
             </button>
           </div>
           <div className="mr-2">

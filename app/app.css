@@ -78,6 +78,10 @@ select {
   padding-bottom: 10px;
 }
 
+[aria-disabled="true"] {
+  opacity: 0;
+}
+
 /* tailwind */
 
 .table-row-headers {
