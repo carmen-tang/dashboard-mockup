@@ -163,6 +163,29 @@ const SelectFilters: React.FC = () => {
               </div>
             </div>
 
+            {/* distribution format */}
+            <div className="relative my-2">
+              <label htmlFor="group" className="font-semibold">Distribution Format</label>
+              <div className="flex gap-10 mt-2">
+                <div className="inline-flex items-center w-3/6">
+                  <label className="relative flex items-center cursor-pointer" htmlFor="EDI">
+                    <input name="framework" type="radio" className="peer h-5 w-5 cursor-pointer appearance-none rounded-full border border-slate-300 checked:border-slate-400 transition-all" id="EDI" />
+                    <span className="absolute bg-[#890089] w-3 h-3 rounded-full opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    </span>
+                  </label>
+                  <label className="ml-2" htmlFor="EDI">EDI</label>
+                </div>
+                <div className="inline-flex items-center w-3/6">
+                  <label className="relative flex items-center cursor-pointer" htmlFor="API">
+                    <input name="framework" type="radio" className="peer h-5 w-5 cursor-pointer appearance-none rounded-full border border-slate-300 checked:border-slate-400 transition-all" id="API" />
+                    <span className="absolute bg-[#890089] w-3 h-3 rounded-full opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    </span>
+                  </label>
+                  <label className="ml-2" htmlFor="API">API</label>
+                </div>
+              </div>
+            </div>
+
           </div>
         ) : (
           <div className="mt-6">Saved Filters Content</div>
