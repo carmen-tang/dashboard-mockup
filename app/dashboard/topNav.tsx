@@ -1,7 +1,7 @@
 import { HiOutlineBell } from "react-icons/hi";
 import { FaChevronDown } from "react-icons/fa";
 
-const TopNav: React.FC<{ topNavLeft: string[]; topNavRight: string[] }> = ({ topNavLeft, topNavRight }) => (
+const TopNav: React.FC = () => (
   <nav className="top-nav inset-0 box-border inline-flex flex-grow w-full h-auto p-6 bg-[#f1f1f3]">
     <div className="top-nav-left flex flex-grow items-start text-lg font-semibold">
       Coverage Periods
