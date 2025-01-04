@@ -24,7 +24,7 @@ const Sidebar: React.FC = () => {
       links: [{ name: "Perspective Groups", href: "#", icon: <FiFolder /> }],
     },
     {
-      category: "Enrollment",
+      category: "Enrollments",
       links: [
         { name: "Pre Coverage Periods", href: "#", icon: <HiOutlineBookOpen />},
         { name: "Coverage Periods", href: "#", icon: <IoDocumentOutline /> },

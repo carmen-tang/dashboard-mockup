@@ -48,7 +48,7 @@ const SelectFilters: React.FC = () => {
               <label htmlFor="coverage-start-date" className="font-semibold">Coverage Start Date</label>
               <div className="flex relative">
                 <div className="flex-grow w-3/6 relative mr-1">
-                  <select id="group" className="select-dropdown border rounded-lg border-gray-300 w-full p-2">
+                  <select id="coverage-start-date" className="select-dropdown border rounded-lg border-gray-300 w-full p-2">
                     <option value="after">After</option>
                     <option value="group1">Group 1</option>
                     <option value="group2">Group 2</option>
@@ -85,10 +85,10 @@ const SelectFilters: React.FC = () => {
 
             {/* coverage end date */}
             <div className="flex flex-col my-4">
-              <label htmlFor="coverage-start-date" className="font-semibold">Coverage End Date</label>
+              <label htmlFor="coverage-end-date" className="font-semibold">Coverage End Date</label>
               <div className="flex relative">
                 <div className="flex-grow w-3/6 relative mr-1">
-                  <select id="group" className="select-dropdown border rounded-lg border-gray-300 w-full p-2">
+                  <select id="coverage-end-date" className="select-dropdown border rounded-lg border-gray-300 w-full p-2">
                     <option value=""></option>
                     <option value="group1">Group 1</option>
                     <option value="group2">Group 2</option>
@@ -125,10 +125,10 @@ const SelectFilters: React.FC = () => {
 
             {/* setup complete at */}
             <div className="flex flex-col my-4">
-              <label htmlFor="coverage-start-date" className="font-semibold">Setup Complete At</label>
+              <label htmlFor="setup-complete-at" className="font-semibold">Setup Complete At</label>
               <div className="flex relative">
                 <div className="flex-grow w-3/6 relative mr-1">
-                  <select id="group" className="select-dropdown border rounded-lg border-gray-300 w-full p-2">
+                  <select id="setup-complete-at" className="select-dropdown border rounded-lg border-gray-300 w-full p-2">
                     <option value=""></option>
                     <option value="group1">Group 1</option>
                     <option value="group2">Group 2</option>
@@ -164,8 +164,8 @@ const SelectFilters: React.FC = () => {
             </div>
 
             {/* distribution format */}
-            <div className="relative my-2">
-              <label htmlFor="group" className="font-semibold">Distribution Format</label>
+            <div className="relative my-4">
+              <label htmlFor="distribution-format" className="font-semibold">Distribution Format</label>
               <div className="flex gap-10 mt-2">
                 <div className="inline-flex items-center w-3/6">
                   <label className="relative flex items-center cursor-pointer" htmlFor="EDI">
@@ -184,6 +184,28 @@ const SelectFilters: React.FC = () => {
                   <label className="ml-2" htmlFor="API">API</label>
                 </div>
               </div>
+            </div>
+
+            {/* carrier */}
+            <div className="relative my-4">
+              <label htmlFor="carrier" className="font-semibold">Carrier</label>
+              <select id="carrier" className="select-dropdown border rounded-lg border-gray-300 w-full p-2">
+                <option value="blue-shield">Blue Shield of California</option>
+                <option value="kaiser-permanente">Kaiser Permanente</option>
+                <option value="guardian">Guardian</option>
+              </select>
+              <FaChevronDown className="absolute right-4 top-9" />
+            </div>
+
+            {/* state */}
+            <div className="relative my-4">
+              <label htmlFor="state" className="font-semibold">State</label>
+              <select id="state" className="select-dropdown border rounded-lg border-gray-300 w-full p-2">
+                <option value=""></option>
+                <option value="az">AZ</option>
+                <option value="ca">CA</option>
+              </select>
+              <FaChevronDown className="absolute right-4 top-9" />
             </div>
 
           </div>
