@@ -58,6 +58,10 @@ a:hover {
   fill: #AAABB5;
 }
 
+.small-icon {
+  width: 20px;
+  height: 20px;
+}
 
 /* tailwind */
 
@@ -75,4 +79,8 @@ a:hover {
 
 .table-cell-end {
   @apply border-b border-gray-300 p-2;
+}
+
+.filter-tag {
+  @apply flex items-center border rounded-2xl border-[#890089] text-sm text-[#3B003B] px-2 py-1 mr-2 mb-2;
 }
