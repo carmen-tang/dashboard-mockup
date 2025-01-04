@@ -50,6 +50,15 @@ a:hover {
   fill: #C5C5CC;
 }
 
+.purple-fill {
+  fill: #890089;
+}
+
+.gray-fill {
+  fill: #AAABB5;
+}
+
+
 /* tailwind */
 
 .table-row-headers {

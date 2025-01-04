@@ -1,5 +1,6 @@
 import React from 'react';
 import OrganizationList from './organizationList';
+import Pagination from './pagination';
 import SettingsIcon from 'app/assets/icons/settings';
 import { TbFilterPlus } from "react-icons/tb";
 
@@ -35,6 +36,7 @@ const CoveragePeriods: React.FC = () => (
     </div>
     <div className="page-content">
       <OrganizationList />
+      <Pagination />
     </div>
   </div>
 );
