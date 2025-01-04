@@ -56,7 +56,7 @@ const Sidebar: React.FC = () => {
   ];
 
   return (
-    <div className="sidebar w-[400px]">
+    <div className="sidebar w-[330px]">
       <div className="m-5 max-w-[125px] mb-10">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111 27">
           <g fill="none">

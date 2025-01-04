@@ -102,11 +102,11 @@ const OrganizationList: React.FC = () => {
 
     <div className="grid grid-cols-5 border-t border-r border-l border-gray-300 rounded-lg overflow-hidden w-full">
       {/* Headers */}
-      <div className="table-row-headers">UUID <RxCaretSort /></div>
-      <div className="table-row-headers">Organization Name <RxCaretSort /></div>
-      <div className="table-row-headers">Carrier <RxCaretSort /></div>
-      <div className="table-row-headers">Account <RxCaretSort /></div>
-      <div className="table-row-headers-end">Delivery Configuration <RxCaretSort /></div>
+      <div className="table-row-headers">UUID <RxCaretSort className="small-icon" /></div>
+      <div className="table-row-headers">Organization Name <RxCaretSort className="small-icon" /></div>
+      <div className="table-row-headers">Carrier <RxCaretSort className="small-icon" /></div>
+      <div className="table-row-headers">Account <RxCaretSort className="small-icon" /></div>
+      <div className="table-row-headers-end">Delivery Configuration <RxCaretSort className="small-icon" /></div>
 
       {/* Data Rows */}
       {organizations.map((org) => (
