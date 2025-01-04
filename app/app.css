@@ -34,6 +34,10 @@ select {
   appearance:none;
 }
 
+td {
+  padding: 4px;
+}
+
 .btn {
   transition: 0.2s ease-in;
 }
