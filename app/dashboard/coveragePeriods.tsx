@@ -45,12 +45,15 @@ const CoveragePeriods: React.FC = () => {
         </div>
       </div>
       <div className="mb-4">
-        <button
-          className="border rounded-lg border-gray-200 text-sm p-2 flex items-center"
-          onClick={toggleFilters}
-        >
-          <TbFilterPlus /> <span className="ml-2">Filters</span>
-        </button>
+        <div className="filtering flex">
+          <button
+            className="border rounded-lg border-gray-200 text-sm p-2 flex items-center"
+            onClick={toggleFilters}
+          >
+            <TbFilterPlus /> <span className="ml-2">Filters</span>
+          </button>
+          {showFilters && <span className="flex items-center pl-2 ml-2 text-sm text-[#890089]" onClick={toggleFilters}>Reset Filters</span>}
+        </div>
         {showFilters && <FilterTags />}
       </div>
       <div className="page-content">
