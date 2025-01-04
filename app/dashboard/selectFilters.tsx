@@ -234,7 +234,26 @@ const SelectFilters: React.FC<Props> = ({ toggleFilters }) => {
 
           </div>
         ) : (
-          <div className="mt-6">Saved Filters Content</div>
+          <ul className="flex flex-col mt-4">
+            <li className="flex justify-between items-center px-4 py-3 bg-[#F9EEFF] cursor-pointer">
+              <span>Initial and Paused</span>
+              <span className="filter-tag-select text-sm">Default</span>
+            </li>
+            <li className="flex justify-between items-center px-4 py-3 hover:bg-[#F1F1F3] cursor-pointer group">
+              <span>Filter Custom Name</span>
+              <span className="flex absolute right-4">
+                <button className="text-sm bg-white hidden group-hover:block border border-gray-200 rounded-md px-2 py-1 mr-2">Make Default</button>
+                <button className="text-sm bg-white text-red-500 hidden group-hover:block border border-gray-200 rounded-md px-2 py-1">Delete</button>
+              </span>
+            </li>
+            <li className="flex justify-between items-center px-4 py-3 hover:bg-[#F1F1F3] cursor-pointer group ">
+              <span>Name Filter Custom</span>
+              <span className="flex absolute right-4">
+                <button className="text-sm bg-white hidden group-hover:block border border-gray-200 rounded-md px-2 py-1 mr-2">Make Default</button>
+                <button className="text-sm bg-white text-red-500 hidden group-hover:block border border-gray-200 rounded-md px-2 py-1">Delete</button>
+              </span>
+            </li>
+          </ul>
         )}
       </div>
     </div>
