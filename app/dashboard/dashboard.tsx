@@ -5,8 +5,7 @@ import CoveragePeriods from './coveragePeriods';
 
 const Dashboard: React.FC = () => {
   return (
-    // sm:max-w-screen-xl
-    <div className="wrapper flex content-center mx-auto">
+    <main className="wrapper flex content-center mx-auto overflow-hidden">
       <Sidebar />
       <section className="main box-border relative w-full bg-[#f1f1f3]">
         <TopNav />
@@ -14,7 +13,7 @@ const Dashboard: React.FC = () => {
           <CoveragePeriods />
         </div>
       </section>
-    </div>
+    </main>
   );
 };
 
