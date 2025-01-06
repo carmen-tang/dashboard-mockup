@@ -77,30 +77,6 @@ export const organizations = [
 
 const OrganizationList: React.FC = () => {
   return (
-    // Table version
-    // <table style={{ borderCollapse: "collapse", width: "100%", border: "1px solid #ccc", borderRadius: "4px" }}>
-    //   <thead>
-    //     <tr className="bg-[#f1f1f3] text-left">
-    //       <th className="p-2">UUID</th>
-    //       <th className="p-2">Organization Name</th>
-    //       <th className="p-2">Carrier</th>
-    //       <th className="p-2">Account</th>
-    //       <th className="p-2">Delivery Configuration</th>
-    //     </tr>
-    //   </thead>
-    //   <tbody>
-    //     {organizations.map((org) => (
-    //       <tr key={org.UUID}>
-    //         <td className="p-2">{org.UUID}</td>
-    //         <td className="p-2">{org.organizationName}</td>
-    //         <td className="p-2">{org.carrier}</td>
-    //         <td className="p-2">{org.account}</td>
-    //         <td className="p-2">{org.deliveryConfiguration}</td>
-    //       </tr>
-    //     ))}
-    //   </tbody>
-    // </table>
-
     <div className="grid grid-cols-5 border-t border-r border-l border-gray-300 rounded-lg overflow-hidden w-full">
       {/* Headers */}
       <div className="table-row-headers">UUID <RxCaretSort className="small-icon" /></div>
