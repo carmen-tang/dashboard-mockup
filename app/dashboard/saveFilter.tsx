@@ -8,7 +8,7 @@ type Props = {
 
 const SaveFilter: React.FC<Props> = ({ showSaveFilter, toggleSaveFilter }) => {
   return (
-    <div className={showSaveFilter ? "block select-filters z-10 bg-white shadow-xl h-full w-[450px] absolute right-0 top-0" : "hidden"}>
+    <div className={showSaveFilter ? "block select-filters z-30 bg-white shadow-xl h-full w-[450px] absolute right-0 top-0" : "hidden"}>
       <h2 className="flex text-2xl mb-2 p-6 items-center"><FaAngleLeft className="mr-8 cursor-pointer" onClick={toggleSaveFilter} /> Save Filter <IoCloseOutline className="large-icon cursor-pointer absolute right-4" onClick={toggleSaveFilter} /></h2>
 
       <div className="flex flex-col justify-between h-[750px]">

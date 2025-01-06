@@ -11,6 +11,7 @@ import { HiOutlineChartBar } from "react-icons/hi";
 import { LuClock4 } from "react-icons/lu";
 import { FiUsers } from "react-icons/fi";
 import { FiSettings } from "react-icons/fi";
+import { FaAngleLeft } from "react-icons/fa6";
 
 
 const Sidebar: React.FC = () => {
@@ -56,7 +57,7 @@ const Sidebar: React.FC = () => {
   ];
 
   return (
-    <div className="sidebar w-[330px]">
+    <div className="sidebar w-[330px] pb-20 relative">
       <div className="m-5 max-w-[125px] mb-10">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111 27">
           <g fill="none">
@@ -73,7 +74,7 @@ const Sidebar: React.FC = () => {
         </span>
       </div>
       <nav>
-        <ul className="">
+        <ul>
           {navStructure.map((category, categoryIndex) => (
             <li key={categoryIndex} className="py-3">
               {category.category && (
@@ -99,6 +100,9 @@ const Sidebar: React.FC = () => {
           ))}
         </ul>
       </nav>
+      <span className="border border-gray-700 rounded absolute bottom-4 right-4 gray-fill p-[2px] cursor-pointer">
+        <FaAngleLeft className="gray-fill" />
+      </span>
     </div>
   );
 };

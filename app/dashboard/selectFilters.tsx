@@ -15,7 +15,7 @@ const SelectFilters: React.FC<Props> = ({ toggleFilters, toggleSaveFilter }) => 
   const [activeTab, setActiveTab] = useState<Tab>('Filters');
 
   return (
-    <div className="select-filters z-10 bg-white shadow-xl h-full w-[450px] absolute right-0 top-0">
+    <div className="select-filters z-30 bg-white shadow-xl h-full w-[450px] absolute right-0 top-0">
       <h2 className="flex justify-between text-2xl mb-2 p-6">Select Filters <IoCloseOutline className="large-icon cursor-pointer" onClick={toggleFilters} /></h2>
 
       <div className="tabs border-b border-gray-200 pl-6">
