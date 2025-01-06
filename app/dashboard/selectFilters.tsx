@@ -39,7 +39,7 @@ const SelectFilters: React.FC<Props> = ({ toggleFilters }) => {
                 <div className="flex border rounded-lg border-gray-300 w-full p-2">
                   <div className="filter-tag-select">Amazon <IoCloseOutline className="small-icon ml-1" /></div>
                   <div className="filter-tag-select">Middo <IoCloseOutline className="small-icon ml-1" /></div>
-                  <FaChevronDown className="absolute right-4 top-9" />
+                  <FaChevronDown className="absolute right-4 top-10" />
                 </div>
               </div>
 

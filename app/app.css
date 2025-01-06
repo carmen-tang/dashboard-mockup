@@ -94,6 +94,12 @@ td {
   fill: #890089;
 }
 
+.select-dropdown {
+  z-index: 20;
+  position: relative;
+  background-color: transparent;
+}
+
 /* tailwind */
 
 .table-row-headers {
