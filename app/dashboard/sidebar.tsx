@@ -86,7 +86,7 @@ const Sidebar: React.FC = () => {
                 {category.links.map((link, linkIndex) => (
                   <li className="flex items-center" key={linkIndex}>
                     <a
-                      className="sidebar-link flex items-center text-sm font-light text-white w-full px-5 py-3 hover:bg-[#293042] active:bg-[#293042]"
+                      className={`sidebar-link flex items-center text-sm font-light text-white w-full px-5 py-3 hover:bg-[#293042] active:bg-[#293042] ${link.name === 'Coverage Periods' ? 'active-nav bg-[#293042] !text-[#FF00FF]' : ''}`}
                       href={link.href}
                     >
                       <span className="small-icon mr-2 text-white">{link.icon}</span>

@@ -72,7 +72,7 @@ td {
   width: 30px;
   height: 30px;
 }
-.sidebar-link:hover svg {
+.sidebar-link:hover svg, .active-nav svg {
   stroke: #FF00FF;
 }
 
