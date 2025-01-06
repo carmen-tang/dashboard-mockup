@@ -15,31 +15,117 @@ body {
   min-width: 1024px;
 }
 
-nav li {
-  padding: 0.75rem;
-}
-
 .sidebar {
-  width: 240px;
   z-index: 10;
-}
-section.main {
-  padding-left: 240px;
+  background-color: #131827;
 }
 
 a {
-  color: #5469d4;
+  color: #ffffff;
 }
 
 a:hover {
-  color: #555;
+  color: #EE5EEC;
 }
 
-.active {
-  color: #5469d4;
-  font-weight: 600;
+select {
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+  appearance:none;
+}
+
+td {
+  padding: 4px;
+}
+
+::placeholder {
+  color: #c1c1c1;
 }
 
 .btn {
   transition: 0.2s ease-in;
+}
+
+.bell svg {
+  width: 26px;
+  height: 26px;
+}
+
+.user svg {
+  fill: #C5C5CC;
+}
+
+.purple-fill {
+  fill: #890089;
+}
+
+.gray-fill {
+  fill: #AAABB5;
+}
+
+.small-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.large-icon {
+  width: 30px;
+  height: 30px;
+}
+.sidebar-link:hover svg, .active-nav svg {
+  stroke: #FF00FF;
+}
+
+.sidebar-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+.active-tab {
+  border-bottom: 2px solid #890089;
+  padding-bottom: 10px;
+}
+
+[aria-disabled="true"] {
+  opacity: 0;
+}
+
+.copy-icon {
+  fill: #890089;
+}
+
+.select-dropdown {
+  z-index: 20;
+  position: relative;
+  background-color: transparent;
+}
+
+/* tailwind */
+
+.table-row-headers {
+  @apply flex bg-gray-100 font-bold p-2 text-left items-center border-r border-b border-gray-200;
+}
+
+.table-row-headers-end {
+  @apply flex bg-gray-100 font-bold p-2 text-left items-center border-b border-gray-200;
+}
+
+.table-cell {
+  @apply border-r border-b border-gray-200 p-2;
+}
+
+.table-cell-end {
+  @apply border-b border-gray-300 p-2;
+}
+
+.filter-tag {
+  @apply flex items-center border rounded-2xl border-[#890089] text-sm text-[#3B003B] px-2 py-1 mr-2 mb-2;
+}
+
+.filter-tag-select {
+  @apply flex items-center border rounded-2xl border-[#890089] text-sm text-[#3B003B] px-2 py-1 mr-2;
+}
+
+.select-field {
+  @apply select-dropdown border rounded-lg border-gray-300 w-full p-2 focus:border-[#890089] focus:ring-0 focus:outline-none;
 }
