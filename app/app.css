@@ -125,3 +125,7 @@ td {
 .filter-tag-select {
   @apply flex items-center border rounded-2xl border-[#890089] text-sm text-[#3B003B] px-2 py-1 mr-2;
 }
+
+.select-field {
+  @apply select-dropdown border rounded-lg border-gray-300 w-full p-2 focus:border-[#890089] focus:ring-0 focus:outline-none;
+}

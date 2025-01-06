@@ -3,16 +3,22 @@ import OrganizationList from './organizationList';
 import Pagination from './pagination';
 import FilterTags from './filterTags';
 import SelectFilters from './selectFilters';
+import SaveFilter from './saveFilter';
 // import SettingsIcon from 'app/assets/icons/settings'; Decided to use an icon library but if I were to manually add icon assets I would add it to an assets folder and import svgs like this
 import { FiSettings } from "react-icons/fi";
 import { TbFilterPlus } from "react-icons/tb";
 
 const CoveragePeriods: React.FC = () => {
   const [showFilters, setShowFilters] = useState(false);
+  const [showSaveFilter, setSaveFilter] = useState(false);
 
   // This is a quick toggle for the filters just for demonstration purposes so that you can see the tags.
   const toggleFilters = () => {
     setShowFilters((prev) => !prev);
+  };
+
+  const toggleSaveFilter = () => {
+    setSaveFilter((prev) => !prev);
   };
 
   return (
@@ -61,7 +67,8 @@ const CoveragePeriods: React.FC = () => {
       <div className="page-content">
         <OrganizationList />
         <Pagination />
-        {showFilters && <SelectFilters toggleFilters={toggleFilters} />}
+        {showFilters && <SelectFilters toggleFilters={toggleFilters} toggleSaveFilter={toggleSaveFilter} />}
+        <SaveFilter showSaveFilter={showSaveFilter} toggleSaveFilter={toggleSaveFilter} />
       </div>
     </div>
   );

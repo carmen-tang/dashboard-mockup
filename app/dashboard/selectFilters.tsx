@@ -8,11 +8,12 @@ type Tab = 'Filters' | 'Saved Filters';
 
 type Props = {
   toggleFilters: () => void;
+  toggleSaveFilter: () => void;
 };
 
-const SelectFilters: React.FC<Props> = ({ toggleFilters }) => {
+const SelectFilters: React.FC<Props> = ({ toggleFilters, toggleSaveFilter }) => {
   const [activeTab, setActiveTab] = useState<Tab>('Filters');
-  
+
   return (
     <div className="select-filters z-10 bg-white shadow-xl h-full w-[450px] absolute right-0 top-0">
       <h2 className="flex justify-between text-2xl mb-2 p-6">Select Filters <IoCloseOutline className="large-icon cursor-pointer" onClick={toggleFilters} /></h2>
@@ -46,7 +47,7 @@ const SelectFilters: React.FC<Props> = ({ toggleFilters }) => {
               {/* group */}
               <div className="relative my-2">
                 <label htmlFor="group" className="font-semibold">Group</label>
-                <select id="group" className="select-dropdown border rounded-lg border-gray-300 w-full p-2">
+                <select id="group" className="select-field">
                   <option value=""></option>
                   <option value="group1">Group 1</option>
                   <option value="group2">Group 2</option>
@@ -60,7 +61,7 @@ const SelectFilters: React.FC<Props> = ({ toggleFilters }) => {
                 <label htmlFor="coverage-start-date" className="font-semibold">Coverage Start Date</label>
                 <div className="flex relative">
                   <div className="flex-grow w-3/6 relative mr-1">
-                    <select id="coverage-start-date" className="select-dropdown border rounded-lg border-gray-300 w-full p-2">
+                    <select id="coverage-start-date" className="select-field">
                       <option value="after">After</option>
                       <option value="group1">Group 1</option>
                       <option value="group2">Group 2</option>
@@ -100,7 +101,7 @@ const SelectFilters: React.FC<Props> = ({ toggleFilters }) => {
                 <label htmlFor="coverage-end-date" className="font-semibold">Coverage End Date</label>
                 <div className="flex relative">
                   <div className="flex-grow w-3/6 relative mr-1">
-                    <select id="coverage-end-date" className="select-dropdown border rounded-lg border-gray-300 w-full p-2">
+                    <select id="coverage-end-date" className="select-field">
                       <option value=""></option>
                       <option value="group1">Group 1</option>
                       <option value="group2">Group 2</option>
@@ -140,7 +141,7 @@ const SelectFilters: React.FC<Props> = ({ toggleFilters }) => {
                 <label htmlFor="setup-complete-at" className="font-semibold">Setup Complete At</label>
                 <div className="flex relative">
                   <div className="flex-grow w-3/6 relative mr-1">
-                    <select id="setup-complete-at" className="select-dropdown border rounded-lg border-gray-300 w-full p-2">
+                    <select id="setup-complete-at" className="select-field">
                       <option value=""></option>
                       <option value="group1">Group 1</option>
                       <option value="group2">Group 2</option>
@@ -201,7 +202,7 @@ const SelectFilters: React.FC<Props> = ({ toggleFilters }) => {
               {/* carrier */}
               <div className="relative my-4">
                 <label htmlFor="carrier" className="font-semibold">Carrier</label>
-                <select id="carrier" className="select-dropdown border rounded-lg border-gray-300 w-full p-2">
+                <select id="carrier" className="select-field">
                   <option value="blue-shield">Blue Shield of California</option>
                   <option value="kaiser-permanente">Kaiser Permanente</option>
                   <option value="guardian">Guardian</option>
@@ -212,7 +213,7 @@ const SelectFilters: React.FC<Props> = ({ toggleFilters }) => {
               {/* state */}
               <div className="relative my-4">
                 <label htmlFor="state" className="font-semibold">State</label>
-                <select id="state" className="select-dropdown border rounded-lg border-gray-300 w-full p-2">
+                <select id="state" className="select-field">
                   <option value=""></option>
                   <option value="az">AZ</option>
                   <option value="ca">CA</option>
@@ -222,16 +223,15 @@ const SelectFilters: React.FC<Props> = ({ toggleFilters }) => {
 
               {/* save filter */}
               <div className="save-filter flex justify-end my-4">
-                <button className="border rounded-lg border-gray-200 text-sm p-2">Save Filter</button>
+                <button className="border rounded-lg border-gray-200 text-sm p-2" onClick={toggleSaveFilter}>Save Filter</button>
               </div>
             </div>
 
-            {/* cta buttons */}
+            {/* configuring filters cta */}
             <div className="save-filter-buttons flex justify-between mt-4 border-t border-gray-200 p-6">
               <button className="border rounded-lg border-gray-200 text-md p-2 w-3/6 mr-1">Reset</button>
               <button className="bg-[#890089] text-white rounded-lg text-md p-2 w-3/6 ml-1">Apply</button>
             </div>
-
           </div>
         ) : (
           <ul className="flex flex-col mt-4">
